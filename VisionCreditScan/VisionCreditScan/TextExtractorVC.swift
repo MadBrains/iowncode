@@ -115,6 +115,8 @@ class TextExtractorVC: UIViewController {
                 detectedText += topCandidate.string
                 detectedText += "\n"
             }
+            
+            print(detectedText)
 
             DispatchQueue.main.async{
                 self.digitsLabel.text = detectedText
